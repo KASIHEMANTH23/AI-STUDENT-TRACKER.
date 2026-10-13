@@ -38,7 +38,7 @@ def get_student_results():
 
 # CHANGED: Now serves your HTML dashboard directly at the root URL
 @app.get("/")
-def home():
+def read_root():
     return FileResponse("index1.html")
 
 
