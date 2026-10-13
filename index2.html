@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Campus Analytics</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #1e293b;
+    }
+
+    .layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    aside {
+      width: 235px;
+      background: #15233b;
+      color: white;
+      padding: 25px 16px;
+      flex-shrink: 0;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 35px;
+    }
+
+    .brand span {
+      color: #60a5fa;
+    }
+
+    .nav-item {
+      padding: 13px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #cbd5e1;
+    }
+
+    .nav-item.active,
+    .nav-item:hover {
+      background: #2b4264;
+      color: white;
+    }
+
+    main {
+      flex: 1;
+      padding: 30px;
+      min-width: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      font-size: 27px;
+      margin-bottom: 7px;
+    }
+
+    .muted {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .tag {
+      background: #dbeafe;
+      color: #1d4ed8;
+      border-radius: 20px;
+      padding: 9px 13px;
+      font-size: 13px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 13px;
+      padding: 21px;
+      box-shadow: 0 3px 12px #0f172a08;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    .stat-number {
+      font-size: 29px;
+      font-weight: bold;
+      margin: 14px 0 8px;
+    }
+
+    .stat-note {
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    .blue { color: #2563eb; }
+    .red { color: #dc2626; }
+    .green { color: #15803d; }
+    .orange { color: #c2410c; }
+
+    .charts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .chart-wrap {
+      position: relative;
+      height: 270px;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    input, select, button {
+      padding: 11px 13px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      background: white;
+      font-size: 14px;
+    }
+
+    input {
+      flex: 1;
+      min-width: 180px;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 14px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+      white-space: nowrap;
+    }
+
+    th {
+      color: #64748b;
+      font-weight: 600;
+      background: #f8fafc;
+    }
+
+    .badge {
+      padding: 6px 9px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .high {
+      color: #b91c1c;
+      background: #fee2e2;
+    }
+
+    .medium {
+      color: #92400e;
+      background: #fef3c7;
+    }
+
+    .low {
+      color: #166534;
+      background: #dcfce7;
+    }
+
+    .view-btn {
+      padding: 7px 10px;
+      font-size: 12px;
+    }
+
+    .insight {
+      margin-top: 24px;
+    }
+
+    .insight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .detail-line {
+      margin: 12px 0;
+      line-height: 1.5;
+    }
+
+    .recommendation {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 15px;
+      border-radius: 7px;
+      margin-top: 14px;
+      line-height: 1.6;
+    }
+
+    footer {
+      color: #64748b;
+      font-size: 12px;
+      text-align: center;
+      padding: 24px 0 8px;
+    }
+
+    @media (max-width: 1000px) {
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .charts { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 650px) {
+      .layout { display: block; }
+      aside { width: 100%; }
+      main { padding: 17px; }
+      .stats { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .card { padding: 15px; }
+      .stat-number { font-size: 23px; }
+      .insight-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 23px; }
+    }
+  </style>
+</head>
+
+<body>
+<div class="layout">
+
+  <aside>
+    <div class="brand">🎓 Smart<span>Campus</span></div>
+    <div class="nav-item active" data-section="overview">▦ Overview</div>
+    <div class="nav-item" data-section="performance">▤ Performance Analytics</div>
+    <div class="nav-item" data-section="students">♙ Student Explorer</div>
+    <div class="nav-item" data-section="insights">✧ Student Insights</div>
+  </aside>
+
+  <main>
+    <header>
+      <div>
+        <h1>Student Success Dashboard</h1>
+        <p class="muted">Monitor academic progress and identify support needs.</p>
+      </div>
+      <span class="tag">INTEGRATED DATA · 2026</span>
+    </header>
+
+    <section class="stats" id="overview">
+      <div class="card">
+        <div class="stat-label">Total Students</div>
+        <div class="stat-number blue" id="total">0</div>
+        <div class="stat-note">Students in current view</div>
+      </div>
+
+      <div class="card">
+        <div class="stat-label">Average Success Score</div>
+        <div class="stat-number green" id="average">0</div>
+        <div class="stat-note">Out of 100</div>
+      </div>
+
+      <div class="card">
+        <div class="stat-label">High Risk</div>
+        <div class="stat-number red" id="highCount">0</div>
+        <div class="stat-note">Students needing review</div>
+      </div>
+
+      <div class="card">
+        <div class="stat-label">Average Attendance</div>
+        <div class="stat-number orange" id="attendance">0%</div>
+        <div class="stat-note">Across current student view</div>
+      </div>
+    </section>
+
+    <section class="charts" id="performance">
+      <div class="card">
+        <h2 class="section-title">Academic Performance</h2>
+        <div class="chart-wrap">
+          <canvas id="academicChart"></canvas>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Student Risk Distribution</h2>
+        <div class="chart-wrap">
+          <canvas id="riskChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="students">
+      <h2 class="section-title">Student Explorer</h2>
+
+      <div class="toolbar">
+        <input id="search" placeholder="Search student ID or name...">
+
+        <select id="riskFilter">
+          <option value="All">All risk levels</option>
+          <option value="High">High risk</option>
+          <option value="Medium">Medium risk</option>
+          <option value="Low">Low risk</option>
+        </select>
+
+        <button id="reset">Reset Filters</button>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Student ID</th>
+              <th>CGPA</th>
+              <th>Attendance</th>
+              <th>Success Score</th>
+              <th>Risk</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="studentTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="insight" id="insights">
+      <div class="insight-grid">
+        <div class="card">
+          <h2 class="section-title">Student Insights</h2>
+          <div id="studentDetails">
+            Select a student from the table to view their details.
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="section-title">Suggested Intervention</h2>
+          <div id="recommendation">
+            Select a student to see suggested support actions.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Student Success Platform · Integrated CSV Records ·
+      Risk indicators support human review, not automatic decisions.
+    </footer>
+  </main>
+</div>
+
+<script>
+  // Integrated dataset compiled from students_master, academic, attendance, lms, engagement, and placement CSVs.
+  const students = [
+    {id:"ST001", name:"Student ST001", cgpa:8.2, attendance:91, score:85, risk:"Low", internal_marks:78, backlogs:0, logins:12, assignment_pct:90, events:5, certifications:3, aptitude:85, coding:80, interview:82, reason:"Strong overall academic and engagement indicators."},
+    {id:"ST002", name:"Student ST002", cgpa:5.6, attendance:62, score:45, risk:"High", internal_marks:42, backlogs:2, logins:3, assignment_pct:45, events:1, certifications:0, aptitude:40, coding:35, interview:42, reason:"Low attendance, active backlogs, and critical support needed."},
+    {id:"ST003", name:"Student ST003", cgpa:7.4, attendance:79, score:72, risk:"Medium", internal_marks:69, backlogs:0, logins:7, assignment_pct:75, events:3, certifications:2, aptitude:70, coding:65, interview:68, reason:"Moderate performance; monitor placement metrics."},
+    {id:"ST004", name:"Student ST004", cgpa:9.0, attendance:95, score:94, risk:"Low", internal_marks:88, backlogs:0, logins:15, assignment_pct:98, events:8, certifications:5, aptitude:95, coding:92, interview:90, reason:"Top performer with excellent engagement metrics."},
+    {id:"ST005", name:"Student ST005", cgpa:6.2, attendance:68, score:53, risk:"Medium", internal_marks:51, backlogs:1, logins:4, assignment_pct:55, events:2, certifications:1, aptitude:50, coding:48, interview:52, reason:"Borderline attendance and backlog count requiring guidance."}
+  ];
+
+  let selectedStudent = null;
+  let academicChart = null;
+  let riskChart = null;
+
+  const $ = id => document.getElementById(id);
+
+  function getFilteredStudents() {
+    const query = $("search").value.toLowerCase().trim();
+    const risk = $("riskFilter").value;
+
+    return students.filter(s => {
+      const matchesQuery =
+        s.id.toLowerCase().includes(query) ||
+        s.name.toLowerCase().includes(query);
+
+      const matchesRisk = risk === "All" || s.risk === risk;
+
+      return matchesQuery && matchesRisk;
+    });
+  }
+
+  function renderKPIs(list) {
+    $("total").textContent = list.length;
+
+    const avgScore = list.length
+      ? list.reduce((sum, s) => sum + s.score, 0) / list.length
+      : 0;
+
+    const avgAttendance = list.length
+      ? list.reduce((sum, s) => sum + s.attendance, 0) / list.length
+      : 0;
+
+    $("average").textContent =
+      list.length ? avgScore.toFixed(1) : "—";
+
+    $("highCount").textContent =
+      list.filter(s => s.risk === "High").length;
+
+    $("attendance").textContent =
+      list.length ? avgAttendance.toFixed(1) + "%" : "—";
+  }
+
+  function renderCharts(list) {
+    if (academicChart) academicChart.destroy();
+    if (riskChart) riskChart.destroy();
+
+    academicChart = new Chart($("academicChart"), {
+      type: "scatter",
+      data: {
+        datasets: [
+          {
+            label: "Students",
+            data: list.map(s => ({
+              x: s.attendance,
+              y: s.cgpa,
+              studentId: s.id
+            })),
+            backgroundColor: "#3b82f6",
+            pointRadius: 6
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: context =>
+                `${context.raw.studentId}: Attendance ${context.raw.x}%, CGPA ${context.raw.y}`
+            }
+          }
+        },
+        scales: {
+          x: {
+            title: {display:true, text:"Attendance (%)"},
+            min: 50,
+            max: 100
+          },
+          y: {
+            title: {display:true, text:"CGPA"},
+            min: 4,
+            max: 10
+          }
+        }
+      }
+    });
+
+    const counts = ["High", "Medium", "Low"].map(level =>
+      list.filter(s => s.risk === level).length
+    );
+
+    riskChart = new Chart($("riskChart"), {
+      type: "doughnut",
+      data: {
+        labels: ["High Risk", "Medium Risk", "Low Risk"],
+        datasets: [{
+          data: counts,
+          backgroundColor: ["#ef4444", "#f59e0b", "#22c55e"],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {position:"bottom"}
+        }
+      }
+    });
+  }
+
+  function renderTable(list) {
+    $("studentTable").innerHTML = "";
+
+    if (!list.length) {
+      $("studentTable").innerHTML =
+        '<tr><td colspan="6">No students match your filters.</td></tr>';
+      return;
+    }
+
+    list.forEach(s => {
+      const tr = document.createElement("tr");
+
+      const values = [
+        s.id,
+        s.cgpa.toFixed(1),
+        s.attendance + "%",
+        s.score + "/100"
+      ];
+
+      values.forEach(value => {
+        const td = document.createElement("td");
+        td.textContent = value;
+        tr.appendChild(td);
+      });
+
+      const riskCell = document.createElement("td");
+      const badge = document.createElement("span");
+      badge.className = "badge " + s.risk.toLowerCase();
+      badge.textContent = s.risk;
+      riskCell.appendChild(badge);
+      tr.appendChild(riskCell);
+
+      const actionCell = document.createElement("td");
+      const button = document.createElement("button");
+      button.className = "view-btn";
+      button.textContent = "View";
+      button.addEventListener("click", () => showStudent(s.id));
+      actionCell.appendChild(button);
+      tr.appendChild(actionCell);
+
+      $("studentTable").appendChild(tr);
+    });
+  }
+
+  function showStudent(id) {
+    const s = students.find(student => student.id === id);
+    if (!s) return;
+
+    selectedStudent = id;
+
+    $("studentDetails").replaceChildren();
+
+    const lines = [
+      ["Student ID", s.id],
+      ["CGPA", s.cgpa + "/10"],
+      ["Internal Marks", s.internal_marks + "/100"],
+      ["Backlogs", s.backlogs],
+      ["Attendance", s.attendance + "%"],
+      ["Success Score", s.score + "/100"],
+      ["Risk Level", s.risk],
+      ["LMS Logins/Week", s.logins],
+      ["Assignment Completion", s.assignment_pct + "%"],
+      ["Events Attended", s.events],
+      ["Certifications", s.certifications],
+      ["Aptitude Score", s.aptitude + "/100"],
+      ["Coding Score", s.coding + "/100"],
+      ["Mock Interview Score", s.interview + "/100"],
+      ["Risk Explanation", s.reason]
+    ];
+
+    lines.forEach(([label, value]) => {
+      const p = document.createElement("p");
+      p.className = "detail-line";
+
+      const strong = document.createElement("strong");
+      strong.textContent = label + ": ";
+
+      p.append(strong, document.createTextNode(value));
+      $("studentDetails").appendChild(p);
+    });
+
+    let advice;
+
+    if (s.risk === "High") {
+      advice = "Suggested action: Immediate faculty review, mandatory attendance check-in, and remedial tutoring for backlogs.";
+    } else if (s.risk === "Medium") {
+      advice = "Suggested action: Schedule a progress check, offer targeted placement practice, and monitor LMS engagement.";
+    } else {
+      advice = "Suggested action: Maintain strong performance and encourage advanced certification or leadership roles.";
+    }
+
+    $("recommendation").textContent = advice;
+  }
+
+  function render() {
+    const list = getFilteredStudents();
+    renderKPIs(list);
+    renderCharts(list);
+    renderTable(list);
+
+    if (selectedStudent && list.some(s => s.id === selectedStudent)) {
+      showStudent(selectedStudent);
+    } else {
+      selectedStudent = null;
+      $("studentDetails").textContent =
+        "Select a student from the table to view their details.";
+      $("recommendation").textContent =
+        "Select a student to see suggested support actions.";
+    }
+  }
+
+  $("search").addEventListener("input", render);
+  $("riskFilter").addEventListener("change", render);
+
+  $("reset").addEventListener("click", () => {
+    $("search").value = "";
+    $("riskFilter").value = "All";
+    render();
+  });
+
+  document.querySelectorAll(".nav-item").forEach(item => {
+    item.addEventListener("click", () => {
+      document.querySelectorAll(".nav-item").forEach(nav =>
+        nav.classList.remove("active")
+      );
+
+      item.classList.add("active");
+
+      const section = $(item.dataset.section);
+      if (section) {
+        section.scrollIntoView({behavior:"smooth", block:"start"});
+      }
+    });
+  });
+
+  render();
+</script>
+</body>
+</html>

@@ -1,0 +1,501 @@
+student_id,success_score,data_coverage_pct,risk_flags
+S001,67.64,100,Multiple backlogs
+S002,87.35,100,No current flags
+S003,66.27,100,"Multiple backlogs, Low assignment completion"
+S004,83.28,100,No current flags
+S005,84.14,100,No current flags
+S006,36.46,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S007,69.57,100,Low attendance
+S008,88.84,100,No current flags
+S009,65.33,100,Low attendance
+S010,34.02,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S011,88.65,100,No current flags
+S012,60.06,100,Low assignment completion
+S013,83.17,100,No current flags
+S014,85.08,100,No current flags
+S015,34.24,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S016,67.68,100,Multiple backlogs
+S017,33.39,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S018,87.21,100,No current flags
+S019,66.91,100,No current flags
+S020,63.69,100,Low assignment completion
+S021,63.91,100,Low assignment completion
+S022,63.81,100,No current flags
+S023,85.36,100,No current flags
+S024,86.81,100,No current flags
+S025,65.43,100,Low assignment completion
+S026,84.22,100,No current flags
+S027,85.12,100,No current flags
+S028,35.49,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S029,60.94,100,"Low attendance, Placement preparation needed"
+S030,88.0,100,No current flags
+S031,88.26,100,No current flags
+S032,63.61,100,No current flags
+S033,64.49,100,"Low attendance, Placement preparation needed"
+S034,39.93,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S035,77.94,100,No current flags
+S036,87.2,100,No current flags
+S037,38.58,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S038,88.52,100,No current flags
+S039,87.1,100,No current flags
+S040,67.89,100,Low attendance
+S041,85.83,100,No current flags
+S042,89.12,100,No current flags
+S043,80.46,100,No current flags
+S044,85.91,100,No current flags
+S045,88.78,100,No current flags
+S046,35.75,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S047,36.19,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S048,63.97,100,Low assignment completion
+S049,88.95,100,No current flags
+S050,39.98,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S051,36.4,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S052,85.19,100,No current flags
+S053,33.34,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S054,63.26,100,No current flags
+S055,63.33,100,Low assignment completion
+S056,85.58,100,No current flags
+S057,69.68,100,No current flags
+S058,83.29,100,No current flags
+S059,68.15,100,Multiple backlogs
+S060,37.97,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S061,44.37,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S062,64.92,100,No current flags
+S063,61.47,100,"Low attendance, Low assignment completion"
+S064,87.78,100,No current flags
+S065,66.4,100,No current flags
+S066,61.49,100,Placement preparation needed
+S067,40.54,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S068,59.17,100,"Low attendance, Multiple backlogs"
+S069,63.46,100,Low attendance
+S070,80.16,100,No current flags
+S071,87.57,100,No current flags
+S072,62.43,100,Low attendance
+S073,58.76,100,Low assignment completion
+S074,40.15,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S075,61.59,100,"Low attendance, Multiple backlogs, Placement preparation needed"
+S076,59.72,100,"Low attendance, Low assignment completion, Placement preparation needed"
+S077,91.25,100,No current flags
+S078,67.62,100,No current flags
+S079,63.83,100,Low attendance
+S080,61.9,100,"Low attendance, Low assignment completion"
+S081,61.0,100,"Low attendance, Placement preparation needed"
+S082,47.86,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S083,69.49,100,No current flags
+S084,87.15,100,No current flags
+S085,43.91,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S086,62.91,100,"Low attendance, Low assignment completion, Placement preparation needed"
+S087,68.48,100,No current flags
+S088,39.42,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S089,86.67,100,No current flags
+S090,38.58,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S091,33.19,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S092,66.87,100,Multiple backlogs
+S093,68.98,100,No current flags
+S094,36.49,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S095,86.57,100,No current flags
+S096,82.95,100,No current flags
+S097,88.76,100,No current flags
+S098,85.4,100,No current flags
+S099,64.83,100,"Low attendance, Low assignment completion"
+S100,81.35,100,No current flags
+S101,68.81,100,Low attendance
+S102,88.51,100,No current flags
+S103,39.35,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S104,56.69,100,"Multiple backlogs, Low assignment completion"
+S105,60.03,100,"Low attendance, Low assignment completion"
+S106,56.16,100,"Low attendance, Low assignment completion"
+S107,86.21,100,No current flags
+S108,42.28,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S109,36.38,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S110,84.69,100,No current flags
+S111,82.31,100,No current flags
+S112,66.36,100,No current flags
+S113,82.43,100,No current flags
+S114,40.75,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S115,80.54,100,No current flags
+S116,64.32,100,No current flags
+S117,83.34,100,No current flags
+S118,70.48,100,No current flags
+S119,87.6,100,No current flags
+S120,81.81,100,No current flags
+S121,62.97,100,No current flags
+S122,65.93,100,Multiple backlogs
+S123,61.95,100,"Low attendance, Placement preparation needed"
+S124,68.43,100,Low attendance
+S125,86.26,100,No current flags
+S126,33.45,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S127,79.49,100,No current flags
+S128,85.38,100,No current flags
+S129,42.59,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S130,62.8,100,Low attendance
+S131,64.87,100,No current flags
+S132,62.07,100,"Low assignment completion, Placement preparation needed"
+S133,60.42,100,"Low assignment completion, Placement preparation needed"
+S134,86.59,100,No current flags
+S135,45.45,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S136,85.98,100,No current flags
+S137,68.87,100,No current flags
+S138,61.88,100,"Low attendance, Low assignment completion"
+S139,43.05,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S140,87.96,100,No current flags
+S141,64.55,100,No current flags
+S142,33.62,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S143,86.48,100,No current flags
+S144,67.34,100,No current flags
+S145,83.8,100,No current flags
+S146,67.06,100,"Low attendance, Multiple backlogs, Low assignment completion"
+S147,61.09,100,"Low attendance, Placement preparation needed"
+S148,82.28,100,No current flags
+S149,36.66,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S150,63.86,100,"Low attendance, Multiple backlogs, Placement preparation needed"
+S151,63.25,100,No current flags
+S152,84.23,100,No current flags
+S153,58.67,100,"Low attendance, Low assignment completion"
+S154,46.77,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S155,69.43,100,No current flags
+S156,63.61,100,"Low attendance, Placement preparation needed"
+S157,36.86,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S158,64.19,100,Placement preparation needed
+S159,82.54,100,No current flags
+S160,63.78,100,No current flags
+S161,88.42,100,No current flags
+S162,59.07,100,"Low assignment completion, Placement preparation needed"
+S163,66.7,100,No current flags
+S164,39.73,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S165,61.17,100,Low attendance
+S166,80.47,100,No current flags
+S167,65.81,100,Multiple backlogs
+S168,65.65,100,Placement preparation needed
+S169,32.45,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S170,63.99,100,"Low attendance, Placement preparation needed"
+S171,88.41,100,No current flags
+S172,84.01,100,No current flags
+S173,62.95,100,Low attendance
+S174,82.48,100,No current flags
+S175,56.23,100,"Low attendance, Low assignment completion, Placement preparation needed"
+S176,70.99,100,No current flags
+S177,58.36,100,"Multiple backlogs, Low assignment completion"
+S178,86.87,100,No current flags
+S179,38.2,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S180,82.32,100,No current flags
+S181,34.52,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S182,41.86,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S183,40.42,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S184,82.87,100,No current flags
+S185,68.4,100,No current flags
+S186,38.75,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S187,40.51,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S188,62.96,100,No current flags
+S189,63.12,100,No current flags
+S190,82.32,100,No current flags
+S191,86.29,100,No current flags
+S192,63.23,100,Low assignment completion
+S193,61.95,100,Low assignment completion
+S194,43.26,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S195,56.63,100,"Low attendance, Placement preparation needed"
+S196,38.97,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S197,33.95,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S198,36.03,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S199,87.33,100,No current flags
+S200,85.9,100,No current flags
+S201,63.7,100,"Low assignment completion, Placement preparation needed"
+S202,37.02,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S203,62.46,100,Placement preparation needed
+S204,38.06,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S205,86.93,100,No current flags
+S206,37.54,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S207,82.31,100,No current flags
+S208,57.81,100,"Low assignment completion, Placement preparation needed"
+S209,85.25,100,No current flags
+S210,64.12,100,Low attendance
+S211,71.97,100,No current flags
+S212,86.38,100,No current flags
+S213,88.37,100,No current flags
+S214,38.17,100,"Low attendance, Low assignment completion, Placement preparation needed"
+S215,38.75,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S216,61.6,100,Low attendance
+S217,84.82,100,No current flags
+S218,84.71,100,No current flags
+S219,87.25,100,No current flags
+S220,59.7,100,"Low attendance, Placement preparation needed"
+S221,41.13,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S222,38.12,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S223,64.19,100,Low assignment completion
+S224,61.3,100,Low assignment completion
+S225,62.99,100,Low attendance
+S226,64.47,100,Low attendance
+S227,62.8,100,No current flags
+S228,35.43,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S229,63.32,100,Low assignment completion
+S230,87.69,100,No current flags
+S231,36.35,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S232,59.21,100,"Low attendance, Low assignment completion"
+S233,68.75,100,No current flags
+S234,61.92,100,No current flags
+S235,38.98,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S236,63.72,100,"Low assignment completion, Placement preparation needed"
+S237,84.58,100,No current flags
+S238,90.26,100,No current flags
+S239,43.24,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S240,63.19,100,No current flags
+S241,88.24,100,No current flags
+S242,44.82,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S243,89.71,100,No current flags
+S244,84.03,100,No current flags
+S245,87.23,100,No current flags
+S246,31.6,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S247,47.67,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S248,33.87,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S249,42.72,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S250,84.22,100,No current flags
+S251,66.52,100,No current flags
+S252,41.12,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S253,82.27,100,No current flags
+S254,87.2,100,No current flags
+S255,87.5,100,No current flags
+S256,93.18,100,No current flags
+S257,36.09,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S258,66.24,100,Low attendance
+S259,63.6,100,Low assignment completion
+S260,81.87,100,No current flags
+S261,65.0,100,No current flags
+S262,40.36,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S263,65.67,100,No current flags
+S264,36.03,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S265,86.07,100,No current flags
+S266,65.05,100,Multiple backlogs
+S267,59.86,100,Low assignment completion
+S268,64.01,100,No current flags
+S269,83.9,100,No current flags
+S270,67.26,100,Low attendance
+S271,87.65,100,No current flags
+S272,38.86,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S273,70.95,100,No current flags
+S274,62.03,100,"Low attendance, Placement preparation needed"
+S275,39.35,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S276,86.02,100,No current flags
+S277,37.88,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S278,46.38,100,"Low attendance, Low assignment completion, Placement preparation needed"
+S279,63.2,100,Low assignment completion
+S280,41.77,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S281,69.21,100,Low attendance
+S282,84.58,100,No current flags
+S283,59.15,100,"Low attendance, Low assignment completion"
+S284,91.27,100,No current flags
+S285,91.83,100,No current flags
+S286,61.3,100,Low assignment completion
+S287,83.74,100,No current flags
+S288,83.71,100,No current flags
+S289,45.65,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S290,69.35,100,No current flags
+S291,37.5,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S292,85.45,100,No current flags
+S293,43.03,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S294,49.81,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S295,36.72,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S296,68.32,100,No current flags
+S297,86.91,100,No current flags
+S298,62.36,100,Low assignment completion
+S299,58.04,100,"Low attendance, Placement preparation needed"
+S300,37.07,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S301,70.62,100,No current flags
+S302,70.95,100,No current flags
+S303,42.74,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S304,80.74,100,No current flags
+S305,86.66,100,No current flags
+S306,79.74,100,No current flags
+S307,33.18,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S308,86.55,100,No current flags
+S309,90.39,100,No current flags
+S310,86.26,100,No current flags
+S311,41.83,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S312,65.1,100,No current flags
+S313,65.47,100,No current flags
+S314,60.77,100,Low attendance
+S315,43.02,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S316,43.76,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S317,84.56,100,No current flags
+S318,88.59,100,No current flags
+S319,65.51,100,Low attendance
+S320,62.12,100,Low attendance
+S321,86.46,100,No current flags
+S322,31.96,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S323,36.75,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S324,63.43,100,Low attendance
+S325,58.61,100,Placement preparation needed
+S326,40.11,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S327,63.64,100,No current flags
+S328,85.18,100,No current flags
+S329,87.4,100,No current flags
+S330,81.13,100,No current flags
+S331,40.45,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S332,66.02,100,Low attendance
+S333,84.54,100,No current flags
+S334,64.55,100,No current flags
+S335,63.78,100,Low attendance
+S336,64.47,100,Placement preparation needed
+S337,84.56,100,No current flags
+S338,64.45,100,Low assignment completion
+S339,64.65,100,Low assignment completion
+S340,38.67,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S341,85.0,100,No current flags
+S342,82.53,100,No current flags
+S343,92.84,100,No current flags
+S344,58.34,100,"Low attendance, Placement preparation needed"
+S345,35.94,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S346,80.27,100,No current flags
+S347,81.91,100,No current flags
+S348,40.58,100,"Low attendance, Low assignment completion, Placement preparation needed"
+S349,66.25,100,No current flags
+S350,87.42,100,No current flags
+S351,86.21,100,No current flags
+S352,65.32,100,Low assignment completion
+S353,77.65,100,No current flags
+S354,36.7,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S355,66.86,100,No current flags
+S356,33.0,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S357,83.77,100,No current flags
+S358,57.0,100,"Low attendance, Low assignment completion, Placement preparation needed"
+S359,68.49,100,No current flags
+S360,43.11,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S361,90.23,100,No current flags
+S362,36.3,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S363,61.15,100,"Low attendance, Low assignment completion"
+S364,39.74,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S365,79.8,100,No current flags
+S366,59.68,100,"Low attendance, Low assignment completion"
+S367,82.43,100,No current flags
+S368,84.37,100,No current flags
+S369,90.04,100,No current flags
+S370,60.53,100,Low assignment completion
+S371,67.71,100,No current flags
+S372,66.87,100,No current flags
+S373,33.14,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S374,61.38,100,Low assignment completion
+S375,45.46,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S376,62.2,100,"Low attendance, Low assignment completion"
+S377,85.39,100,No current flags
+S378,68.9,100,No current flags
+S379,61.81,100,"Low attendance, Low assignment completion"
+S380,66.47,100,Low assignment completion
+S381,71.24,100,No current flags
+S382,83.38,100,No current flags
+S383,87.88,100,No current flags
+S384,37.27,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S385,87.22,100,No current flags
+S386,62.36,100,"Low attendance, Low assignment completion"
+S387,42.17,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S388,39.06,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S389,59.03,100,"Low attendance, Placement preparation needed"
+S390,90.87,100,No current flags
+S391,63.99,100,Low assignment completion
+S392,81.5,100,No current flags
+S393,85.29,100,No current flags
+S394,65.15,100,Placement preparation needed
+S395,61.84,100,Low assignment completion
+S396,63.44,100,Low attendance
+S397,85.12,100,No current flags
+S398,67.47,100,Placement preparation needed
+S399,67.98,100,No current flags
+S400,68.29,100,Low assignment completion
+S401,85.41,100,No current flags
+S402,67.26,100,Low attendance
+S403,62.87,100,"Low attendance, Multiple backlogs, Low assignment completion"
+S404,67.46,100,No current flags
+S405,43.03,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S406,67.85,100,No current flags
+S407,87.25,100,No current flags
+S408,82.81,100,No current flags
+S409,38.66,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S410,63.73,100,No current flags
+S411,79.59,100,No current flags
+S412,65.99,100,No current flags
+S413,66.32,100,Low assignment completion
+S414,37.86,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S415,70.4,100,Low assignment completion
+S416,65.5,100,Low attendance
+S417,63.97,100,"Low attendance, Placement preparation needed"
+S418,41.76,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S419,65.32,100,Low attendance
+S420,89.66,100,No current flags
+S421,59.45,100,Low attendance
+S422,61.43,100,Low assignment completion
+S423,67.5,100,No current flags
+S424,61.94,100,Low assignment completion
+S425,40.67,100,"Low attendance, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S426,44.94,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S427,60.43,100,Low assignment completion
+S428,40.47,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S429,64.34,100,Low assignment completion
+S430,63.38,100,No current flags
+S431,62.12,100,No current flags
+S432,64.96,100,"Low attendance, Multiple backlogs"
+S433,64.45,100,No current flags
+S434,59.83,100,Low assignment completion
+S435,64.59,100,Low assignment completion
+S436,79.97,100,No current flags
+S437,67.93,100,No current flags
+S438,63.53,100,"Low attendance, Multiple backlogs"
+S439,86.5,100,No current flags
+S440,83.17,100,No current flags
+S441,87.22,100,No current flags
+S442,83.49,100,No current flags
+S443,66.25,100,Multiple backlogs
+S444,67.17,100,Placement preparation needed
+S445,68.72,100,No current flags
+S446,62.31,100,No current flags
+S447,82.85,100,No current flags
+S448,84.44,100,No current flags
+S449,88.79,100,No current flags
+S450,84.97,100,No current flags
+S451,62.95,100,Low assignment completion
+S452,69.22,100,No current flags
+S453,62.56,100,Low assignment completion
+S454,54.53,100,"Low attendance, Multiple backlogs, Low assignment completion"
+S455,83.65,100,No current flags
+S456,61.43,100,"Low attendance, Placement preparation needed"
+S457,73.61,100,No current flags
+S458,66.75,100,No current flags
+S459,37.25,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S460,38.43,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S461,32.67,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S462,68.86,100,No current flags
+S463,67.35,100,Low assignment completion
+S464,85.33,100,No current flags
+S465,83.85,100,No current flags
+S466,43.22,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S467,63.59,100,"Low attendance, Low assignment completion"
+S468,35.6,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S469,42.52,100,"Low attendance, Academic support needed, Low assignment completion, Placement preparation needed"
+S470,59.72,100,Low assignment completion
+S471,88.76,100,No current flags
+S472,84.14,100,No current flags
+S473,63.81,100,Low attendance
+S474,38.11,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S475,63.36,100,Low attendance
+S476,85.26,100,No current flags
+S477,84.38,100,No current flags
+S478,67.18,100,Low attendance
+S479,58.41,100,"Low assignment completion, Placement preparation needed"
+S480,65.8,100,Low assignment completion
+S481,41.97,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S482,66.87,100,Low attendance
+S483,82.69,100,No current flags
+S484,63.78,100,Multiple backlogs
+S485,39.9,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S486,81.9,100,No current flags
+S487,57.51,100,"Low attendance, Low assignment completion"
+S488,45.35,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S489,66.22,100,No current flags
+S490,86.2,100,No current flags
+S491,62.29,100,Low attendance
+S492,70.83,100,No current flags
+S493,42.34,100,"Low attendance, Academic support needed, Multiple backlogs, Low assignment completion, Placement preparation needed"
+S494,58.49,100,Placement preparation needed
+S495,64.96,100,"Low attendance, Placement preparation needed"
+S496,84.28,100,No current flags
+S497,63.61,100,No current flags
+S498,59.1,100,"Low attendance, Low assignment completion"
+S499,66.7,100,No current flags
+S500,69.6,100,No current flags

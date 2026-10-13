@@ -1,0 +1,6 @@
+student_id,cgpa,internal_marks,backlogs,attendance_pct,logins_per_week,assignment_completion_pct,events_attended,certifications,aptitude_score,coding_score,mock_interview_score
+ST001,8.2,78,0,91,12,90,5,3,85,80,82
+ST002,5.6,42,2,62,3,45,1,0,40,35,42
+ST003,7.4,69,0,79,7,75,3,2,70,65,68
+ST004,9.0,88,0,95,15,98,8,5,95,92,90
+ST005,6.2,51,1,68,4,55,2,1,50,48,52

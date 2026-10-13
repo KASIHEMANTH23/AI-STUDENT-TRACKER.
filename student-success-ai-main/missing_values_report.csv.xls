@@ -1,0 +1,13 @@
+column_name,missing_count
+student_id,0
+cgpa,0
+internal_marks,0
+backlogs,0
+attendance_pct,0
+logins_per_week,0
+assignment_completion_pct,0
+events_attended,0
+certifications,0
+aptitude_score,0
+coding_score,0
+mock_interview_score,0
